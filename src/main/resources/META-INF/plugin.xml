@@ -5,14 +5,11 @@
     <vendor>danthk</vendor>
 
     <depends>com.intellij.modules.platform</depends>
-
-    <resource-bundle>messages.MyBundle</resource-bundle>
-
-    <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.danthk.myawesomeplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-    </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.danthk.myawesomeplugin.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
+    <actions>
+        <action id="com.github.danthk.myawesomeplugin.PopupDialogAction"
+                class="com.github.danthk.myawesomeplugin.PopupDialogAction" text="Pop Dialog Action"
+                description="SDK action example">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
 </idea-plugin>
