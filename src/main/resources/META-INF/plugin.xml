@@ -6,8 +6,8 @@
 
     <depends>com.intellij.modules.platform</depends>
     <actions>
-        <action id="com.github.danthk.myawesomeplugin.PopupDialogAction"
-                class="com.github.danthk.myawesomeplugin.PopupDialogAction" text="Pop Dialog Action"
+        <action id="com.github.danthk.myawesomeplugin.toolWindow.PopupDialogAction"
+                class="com.github.danthk.myawesomeplugin.toolWindow.PopupDialogAction" text="Pop Dialog Action"
                 description="SDK action example">
             <add-to-group group-id="ToolsMenu" anchor="first"/>
         </action>
